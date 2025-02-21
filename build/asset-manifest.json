@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/ftc-website-frontend/static/css/main.bb7b2ae8.css",
+    "main.js": "/ftc-website-frontend/static/js/main.bed5d9c2.js",
+    "static/media/image3.jpg": "/ftc-website-frontend/static/media/image3.5584fa7b6cd830a82ec6.jpg",
+    "static/media/image.png": "/ftc-website-frontend/static/media/image.fc70ed7e59c483ae09d3.png",
+    "static/media/img6.png": "/ftc-website-frontend/static/media/img6.28c1fb01814f27121222.png",
+    "static/media/img11.jpg": "/ftc-website-frontend/static/media/img11.f510224995fa688bc484.jpg",
+    "static/media/faq-img3.png": "/ftc-website-frontend/static/media/faq-img3.a9802d17a05b9030c6d4.png",
+    "static/media/faq-img2.png": "/ftc-website-frontend/static/media/faq-img2.9534918b0dd9b5106bc0.png",
+    "static/media/faq-img.png": "/ftc-website-frontend/static/media/faq-img.148510ae48d34bdc7e99.png",
+    "static/media/img12.jpg": "/ftc-website-frontend/static/media/img12.c3b55e632bc53e6cb352.jpg",
+    "static/media/img9.jpg": "/ftc-website-frontend/static/media/img9.64481af14b947cf75cda.jpg",
+    "static/media/image2.png": "/ftc-website-frontend/static/media/image2.d541f038ee98c8e95436.png",
+    "static/media/slick.svg": "/ftc-website-frontend/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/ftc-website-frontend/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/ftc-website-frontend/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/ftc-website-frontend/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/ftc-website-frontend/index.html",
+    "main.bb7b2ae8.css.map": "/ftc-website-frontend/static/css/main.bb7b2ae8.css.map",
+    "main.bed5d9c2.js.map": "/ftc-website-frontend/static/js/main.bed5d9c2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb7b2ae8.css",
+    "static/js/main.bed5d9c2.js"
+  ]
+}

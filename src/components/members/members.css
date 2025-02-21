@@ -1,9 +1,10 @@
+
+
 @font-face {
   font-family: 'slick';
-  src: url('/fonts/slick.ttf') format('truetype'),
-       url('/fonts/slick.woff') format('woff');
+  src: url('~slick-carousel/slick/fonts/slick.ttf') format('truetype'),
+       url('~slick-carousel/slick/fonts/slick.woff') format('truetype');
 }
-
 
 
   .member, .member-card, .member-details {
