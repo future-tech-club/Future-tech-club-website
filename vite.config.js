@@ -1,10 +1,13 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vite.dev/config/
 export default defineConfig({
-  base: "./",
   plugins: [react()],
-  assetsInclude: ['**/*.ttf', '**/*.woff', '**/*.woff2', '**/*.eot', '**/*.svg']
-})
-
+  base: '/ftc-website-frontend/',  
+  build: {
+    outDir: 'dist',
+  },
+  server: {
+    historyApiFallback: true,
+  },
+});
