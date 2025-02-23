@@ -190,7 +190,8 @@ body .aboutus {
             width: 100%;
         }
         .subtitle{
-            font-weight: 800;
+            font-weight: 700;
+            font-size: 64px;
         }
 
     } 
