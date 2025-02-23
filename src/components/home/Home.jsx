@@ -37,7 +37,7 @@ const Home = () =>{
             <div className="description">The first and the only scientific club at the National Higher School of ICT and Post.</div>
             <div className="buttons">
                 <a href="#FAQ"><button className="primary-btn" >Join us</button></a>
-                <a href="#Contact"><button className="secondary-btn">Contact us</button></a>
+                <a href="#ContactUs"><button className="secondary-btn">Contact us</button></a>
             </div>
             
         </div>
