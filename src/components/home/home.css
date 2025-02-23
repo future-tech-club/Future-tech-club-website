@@ -188,7 +188,8 @@ button{
 @media screen and (max-width: 430px) {
     
     .nav{
-        background-color: transparent;
+        background-color: red;
+        padding: 0;
     }
     .nav-links{
         display: none;
@@ -197,17 +198,20 @@ button{
         margin: 0;
         height: 50px;
         width: 130px;
-        /* position: absolute;
-        left: 5px;
-        top: 20px; */
+        position: relative; /* Permet d'utiliser top et left */
+        top: -10px; /* Déplace vers le haut */
+        left: -25px; 
+  
     }
     .home{
         background-image: none;
-        height: fit-content;
+        min-height: 135vh;
+        overflow: visible;
+        
 
     }
     .home .content{
-        margin-top: 100px;
+        margin-top: 50px;
         padding-top: 0;
         text-align: center;
     }
@@ -232,7 +236,7 @@ button{
         float: none;
         transform: scale(0.9);
         border-radius: 18px;
-        overflow: hidden;
+        overflow-x: hidden;
         
 
     }
@@ -242,7 +246,8 @@ button{
         object-fit: cover;
     } 
     .arrow{
-        margin-top: 100px;
+        margin-top: 10px;
+        z-index: 99;
     }
     .slick-center {
         transform: scale(1.1);
