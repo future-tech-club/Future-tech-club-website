@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { FaLinkedinIn } from "react-icons/fa";
 import "./members.css";
 import AsmaImg from './images/asma.jpg'
+import AnfelImg from './images/anfel.jpg'
 
 const Members = () => {
   const members = [
@@ -15,18 +16,18 @@ const Members = () => {
       department: "Developpment",
       role: "Manager",
       prom: "IGE3",
-      description: "rontend developer & DevOps enthusiast leading the development team.",
+      description: "Hi, I'm Chohra Asma, a 3rd-year IT engineering student at ENSTIC. I am a frontend developer  leading the development team.",
       linkedin_account: "www.linkedin.com/in/asma-chohra-53003124b"
     },
     {
       id: 2,
-      image: "https://example.com/image2.jpg",
-      name: "Jane Smith",
+      image: AnfelImg,
+      name: "Yetto Anfel",
       department: "Design",
-      role: "UI/UX Designer",
-      prom: "2022",
-      description: "Jane is a creative designer specializing in user experience and interface design.",
-      linkedin_account: "https://www.linkedin.com/in/janesmith"
+      role: "Manager",
+      prom: "IGE3",
+      description: "Hi, I'm YETTO Anfel, a 3rd-year IT engineering student at ENSTICP and the design department chief at FTClub. I hope to encourage beginner designers to improve.",
+      linkedin_account: "https://www.linkedin.com/in/yetto-anfel-ab656126a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app/"
     }
   ];
 
@@ -36,8 +37,8 @@ const Members = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 1000,
+    autoplay: true,
+    autoplaySpeed: 800,
     arrows: false,
   };
 

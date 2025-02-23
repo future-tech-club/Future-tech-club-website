@@ -188,7 +188,7 @@ button{
 @media screen and (max-width: 430px) {
     
     .nav{
-        background-color: red;
+        background-color: transparent;
         padding: 0;
     }
     .nav-links{
@@ -198,8 +198,8 @@ button{
         margin: 0;
         height: 50px;
         width: 130px;
-        position: relative; /* Permet d'utiliser top et left */
-        top: -10px; /* Déplace vers le haut */
+        position: relative; 
+        top: -10px; 
         left: -25px; 
   
     }
