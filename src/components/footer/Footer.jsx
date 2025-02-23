@@ -17,9 +17,9 @@ const Footer = () =>{
                     <a href="https://www.instagram.com/future_tech_club/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                         <FaInstagram />
                     </a>
-                    <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X">
+                    {/* <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X">
                         <FaXTwitter />
-                    </a>
+                    </a> */}
                     <a href="https://www.linkedin.com/company/club-scientifique-de-l-ensticp/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                         <FaLinkedin  />
                     </a>

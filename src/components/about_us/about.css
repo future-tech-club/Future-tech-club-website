@@ -189,5 +189,8 @@ body .aboutus {
             height: 100%;
             width: 100%;
         }
-
+        .subtitle{
+            font-weight: 600;
+        }
+        
     } 

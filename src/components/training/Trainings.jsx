@@ -1,39 +1,27 @@
-import React, { useState, useEffect } from 'react';
-import axios from "axios";  // ✅ Import axios
+import React from 'react';
 import './training.css';
-
+import dataAnalysis from './images/dataAnalysis.png'
+import networking from './images/networking.png'
 const Trainings = () => {
-    const [workshops, setWorkshops] = useState([]);
-
-    useEffect(() => {
-        const getWorkshops = async () => {
-            try {
-                const response = await axios.get("https://ftc-website-backend-production.up.railway.app/api/workshops/");
-                console.log("API Response:", response.data);
-
-                const updatedWorkshops = response.data.map((workshop) => ({
-                    ...workshop,
-                    image: workshop.image.startsWith("/media/")
-                        ? `https://ftc-website-backend-production.up.railway.app${workshop.image}`
-                        : `https://ftc-website-backend-production.up.railway.app/media/${workshop.image}`,
-                }));
-
-                setWorkshops(updatedWorkshops);
-                console.log("Updated Workshops:", updatedWorkshops);
-            } catch (error) {
-                console.error("Error fetching workshops:", error);
-            }
-        };
-
-        getWorkshops();
-    }, []);
+    // Static array of workshops
+    const workshops = [
+        {
+            id: 1,
+            image: dataAnalysis,
+            name: "data analysis",
+        },
+        {
+            id: 2,
+            image: networking ,
+            name: "networking",
+        }
+    ];
 
     const displayedItems = [
         ...workshops,
         ...Array(3 - workshops.length).fill(null),
     ].slice(0, 3);
 
-    console.log('Displayed Items:', displayedItems); // Debugging output
 
     return (
         <div id="Trainings" className="Trainings">
@@ -45,7 +33,7 @@ const Trainings = () => {
                         {item ? (
                             <img src={item.image} alt={`Training ${index + 1}`} />
                         ) : (
-                            <p>...</p>
+                            <p>...</p> 
                         )}
                     </div>
                 ))}

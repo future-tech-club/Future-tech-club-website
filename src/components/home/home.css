@@ -195,13 +195,13 @@ body .home {
         margin: 0;
         height: 50px;
         width: 130px;
-        position: absolute;
+        /* position: absolute;
         left: 5px;
-        top: 20px;
+        top: 20px; */
     }
     .home{
         background-image: none;
-        
+        height: fit-content;
 
     }
     .home .content{
@@ -209,8 +209,11 @@ body .home {
         padding-top: 0;
         text-align: center;
     }
+    .home .content .title{
+        font-size: 36px;
+    }
     .content .description{
-        font-size: 18px;
+        font-size: 14px;
         max-width: 500px;
         text-align: center;
     }

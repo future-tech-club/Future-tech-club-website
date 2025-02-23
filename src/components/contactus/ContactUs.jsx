@@ -53,6 +53,7 @@ const ContactUs = () => {
               placeholder="First Name"
               value={formData.firstName}
               onChange={handleInputChange}
+              required
             />
           </div>
           <div>
@@ -64,6 +65,7 @@ const ContactUs = () => {
               placeholder="Last Name"
               value={formData.lastName}
               onChange={handleInputChange}
+              required
             />
           </div>
         </div>
@@ -76,6 +78,7 @@ const ContactUs = () => {
             placeholder="Email Address"
             value={formData.email}
             onChange={handleInputChange}
+            required
           />
         </div>
         <div className="input">
@@ -86,9 +89,10 @@ const ContactUs = () => {
             placeholder="Your message"
             value={formData.message}
             onChange={handleInputChange}
+            required
           ></textarea>
         </div>
-        <button type="submit">SEND MESSAGE</button>
+        <button  type="submit">SEND MESSAGE</button>
         {status && <p>{status}</p>}
       </form>
     </div>

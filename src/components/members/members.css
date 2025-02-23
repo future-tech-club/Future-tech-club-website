@@ -131,16 +131,24 @@
   text-align: center;
   justify-content: center;
   margin: 0 auto;
-  padding: 0 auto;
+  padding: 0 ;
   /* background-color: antiquewhite; */
   
 }
 .member-card{
-  margin: 0 auto;
+  margin: 0 ;
   width: 100%;
 }
 .member-details{
   width: 100%;
+}
+.member-details {
+  font-size: 24px;
+}
+
+.member-details p:nth-child(1),
+.member-details p:nth-child(2) {
+  font-size: 38px;
 }
 
 }

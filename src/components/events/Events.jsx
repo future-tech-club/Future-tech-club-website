@@ -1,39 +1,24 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-
+import React from "react";
 import "./events.css";
 import Event from "./Event";
-
+import FTCodingImg from './images/event-img.png'
 const Events = () => {
-    const [events, setEvents] = useState([]);
-
-    useEffect(() => {
-        const getEvents = async () => {
-            try {
-                const response = await axios.get("https://ftc-website-backend-production.up.railway.app/api/events/");
-                console.log("API Response:", response.data);
-
-                const updatedEvents = response.data.map((event) => {
-                    const imageUrl = event.image.startsWith("/media/")
-                        ? `https://ftc-website-backend-production.up.railway.app${event.image}`
-                        : `https://ftc-website-backend-production.up.railway.app/media/${event.image}`;
-
-                    console.log("Image URL:", imageUrl); // Debug image URL
-                    return {
-                        ...event,
-                        image: imageUrl,
-                    };
-                });
-
-                setEvents(updatedEvents);
-                console.log("Updated Events:", updatedEvents);
-            } catch (error) {
-                console.error("Error fetching events:", error);
-            }
-        };
-
-        getEvents();
-    }, []);
+    const events = [
+        {
+            image: FTCodingImg ,
+            name: "FTCoding",
+            date: "2024-5-15",
+            location: "ENSTICP",
+            description: "This is the first event description."
+        },
+        {
+            image: FTCodingImg,
+            name: "FTCoding",
+            date: "2024-5-15",
+            location: "ENSTICP",
+            description: "This is the first event description."
+        }
+    ];
 
     return (
         <div id="Events" className="Events">
