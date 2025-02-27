@@ -191,8 +191,9 @@ body .aboutus {
         }
         .subtitle{
             font-weight: 700;
-            font-size: 52px;
-            -webkit-text-stroke: 0.2px var(--primary-color);
+            font-size: 32px;
+            color: var(--primary-color);
+            opacity: 0.8;
         }
 
 
